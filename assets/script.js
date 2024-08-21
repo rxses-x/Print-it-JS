@@ -28,6 +28,7 @@ function showSlide(index) {
 
     // Mettre à jour l'image et le texte
     bannerImg.src = basePath + slides[currentIndex].image;
+	bannerImg.alt = "Banner Print-it " + (index + 1)
     bannerText.innerHTML = slides[currentIndex].tagLine;
 
 	document.querySelectorAll('.dot').forEach((dot, idx) => {
